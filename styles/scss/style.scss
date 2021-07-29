@@ -1,55 +1,22 @@
-//import des polices
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
-
-
-// import des mixins
-@import 'utils/mixins/imgsize';
-@import 'utils/mixins/gridmid';
-@import 'utils/mixins/marginpadd';
-@import 'utils/mixins/boxproperties';
-@import 'utils/mixins/text';
-
-body {
-    @include marginPadd(0, 0);
-}
 img {
-    @include imgsize(250px);
+    width: 100px;
 }
-header {
-    @include gridMid;
-    @include marginPadd(0, 0);
-    @include box(none, none, white, none, none, 0px 1px 5px #ccc);
-    @include textProperties(20px, 'Shrikhand', bold, center, none);
-    position: relative;
-    z-index: 1;
-        h1 {
-            @include marginPadd(1rem, 0);
-        }
-}
-.geoloc {
-    @include marginPadd(0, 20px);
-    @include box(none, none,#F3F3F3, none, none, none);
-    @include textProperties(20px, 'Roboto', bold, center, none);
-        i {
-            margin-right: 0.3rem;
-        }
-}
-.reserve {
-    @include textProperties(15px, 'Roboto', bold, center, none);
-        h1{
-            @include marginPadd(0 70px, 1.5rem 0);
-        }
-        p {
-            @include textProperties(15px, 'Roboto', 300, center, none);
-            @include marginPadd(0 50px, 0);
-        }
-        button {
-            @include box(230px, 2.5rem, linear-gradient(rgba(255, 121, 218,.9), rgba(147,86,220,.9)), 20px, none, 3px 3px 5px #ccc);
-            @include marginPadd(1rem 0, 0);
-            @include textProperties(17px, 'Roboto', normal, center, white);
-            cursor: pointer;
-            &:hover {
-            @include box(230px, 2.5rem, linear-gradient(rgba(241, 146, 214, 0.9), rgba(158, 113, 212, 0.9)), 20px, none, 3px 3px 5px rgb(168, 167, 167));
-            }
-        }
-}
+// import des mixins
+@import 'utils/mixins';
+
+// imports des variables
+@import 'utils/variables';
+
+// imports des placeholders
+@import 'utils/placeholders';
+
+
+// imports des fonctions
+
+
+// imports des partiels
+@import 'base/fonts';
+@import 'pages/main';
+@import 'layouts/header';
+@import 'pages/geoloc';
+@import 'pages/reserve';

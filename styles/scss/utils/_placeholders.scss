@@ -1,5 +1,6 @@
-@mixin gridMid {
-    display: grid;
+%flexMid {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
+

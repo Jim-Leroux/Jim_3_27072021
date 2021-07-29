@@ -1,0 +1,19 @@
+@mixin marginPadding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin textProperties($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin button($width, $radius, $border, $shadow, $background, $color) {
+    width: $width;
+    border-radius: $radius;
+    border: $border;
+    box-shadow: $shadow;
+    background: $background;
+    color: $color;
+}

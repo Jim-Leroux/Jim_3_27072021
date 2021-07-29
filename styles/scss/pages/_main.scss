@@ -1,0 +1,33 @@
+body {
+    @include marginPadding(0, 0);
+}
+.maincontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                    "header"
+                    "geoloc"
+                    "reserve"
+                    "howitsworks"
+                    "restaurant"
+                    "footer";
+}
+
+header {
+    grid-area: header;
+}
+.geoloc {
+    grid-area: geoloc;
+}
+.reserve {
+    grid-area: reserve;
+}
+.howitsworks {
+    grid-area: howitsworks;
+}
+.restaurant {
+    grid-area: restaurant;
+}
+footer {
+    grid-area: footer;
+}
