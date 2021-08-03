@@ -1,11 +1,14 @@
-img {
-    width: 100px;
-}
+// import des polices
+@import 'base/fonts';
+
+
 // import des mixins
 @import 'utils/mixins';
 
+
 // imports des variables
 @import 'utils/variables';
+
 
 // imports des placeholders
 @import 'utils/placeholders';
@@ -15,8 +18,11 @@ img {
 
 
 // imports des partiels
-@import 'base/fonts';
+@import 'pages/loader';
 @import 'pages/main';
 @import 'layouts/header';
 @import 'pages/geoloc';
 @import 'pages/reserve';
+@import 'pages/howitworks';
+@import 'pages/restaurant';
+@import 'layouts/footer';
