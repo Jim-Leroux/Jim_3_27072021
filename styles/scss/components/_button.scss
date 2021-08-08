@@ -1,0 +1,11 @@
+button {
+    @include marginPadding(0, 0.8rem 0.5rem);
+    @include textProperties('Roboto', 17px, 500);
+    @include button(250px, 40px, none, 5px 5px 3px rgba(170, 170, 170, 0.3), linear-gradient(rgb(248, 112, 209),rgb(137, 75, 212)), white);
+    transition: 0.5s;
+    cursor: pointer;
+        &:hover {
+            box-shadow: 5px 5px 3px rgba($color: rgb(36, 36, 36), $alpha: 0.3);
+            background: linear-gradient(rgb(250, 129, 216),rgb(151, 97, 218));
+            }
+}

@@ -1,72 +1,32 @@
 .restaurant {
-    @include marginPadding( 0 auto, 0);
+    @include marginPadding( 0 auto, 1rem 0);
     background-color: #f3f3f3;
+    h2 {
+        width: 90%;
+        margin: 1rem auto;
+        @media (min-width: 768px) {
+            text-align: center;
+            margin: 1rem auto;
+        }
+    }
         .restaurant-card {
             display: flex;
             flex-direction: column;
-        }
-            .card {
-                margin: 0.5rem auto;
-                width: 90%;
-                max-width: 768px;
-                border-radius: 20px;
-                background-color: white;
-                position: relative;
-                        .foodpicture {
-                            width: 100%;
-                            height: 170px;
-                            border-radius: 20px 20px 0px 0px;
-                            object-fit: cover;
-                        }
+            @media (min-width: 768px) {
+                margin: auto;
+                max-width: 1280px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 2rem;
             }
+        }
 }
 
-h2 {
-    margin: 1rem auto
-}
-.new {
-    @extend %new;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-.areaName {
-    @include marginPadding(1rem, 0);
-        h3 {
-            margin: 0.3rem 0;
-        }
-}
-.description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.whiteheart {
-    @include marginPadding(1rem, 0);
-    width: 35px;
-    position: relative;
-    transition: 0.4s;
-    &:hover {
-        z-index: -10;
-        color: transparent;
-        transition: 0.4s;
-    }
-}
-.colorheart {
-    height: 30.6px;
-    width: 35px;
-    @include marginPadding(1rem, 0);
-    position: absolute;
-    color: transparent;
-    transition: 0.4s;
-    opacity: 0;
-    &:hover {
-        background-color: white;
-        opacity: 1;
-        z-index: 10;
-        transition: 0.4s;
-    }
-}
+
+
+
+
+
+
 
 

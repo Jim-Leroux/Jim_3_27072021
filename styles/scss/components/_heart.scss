@@ -1,0 +1,28 @@
+div {
+    .whiteheart {
+        @include marginPadding(1rem, 0);
+        font-size: 35px;
+        position: relative;
+        transition: 0.4s;
+        &:hover {
+            z-index: -10;
+            color: transparent;
+            transition: 0.4s;
+        }
+    }
+    .colorheart {
+        @include marginPadding(1rem, 0);
+        font-size: 35px;
+        position: absolute;
+        transition: 0.4s;
+        opacity: 0;
+        &:hover {
+            background: linear-gradient(blueviolet, pink);
+            background-clip: text;
+            color: transparent;
+            opacity: 1;
+            z-index: 10;
+            transition: 0.4s;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.tuto::before {
+    counter-increment: list;
+    content: counter(list) " ";
+    padding: 0.3rem 0.6rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: -0.8rem;
+    top: 1.2rem;
+}

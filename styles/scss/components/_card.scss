@@ -1,0 +1,33 @@
+.card {
+    margin: 0.5rem auto;
+    width: 90%;
+    max-width: 768px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    @media (min-width: 768px) {
+        
+    }
+    .foodpicture {
+        width: 100%;
+        height: 170px;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+    .new {
+        @extend %new;
+    }
+    .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .areaName {
+            @include marginPadding(1rem, 0);
+            h3 {
+                margin: 0.3rem 0;
+            }
+        }
+    }
+}

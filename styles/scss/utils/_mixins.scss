@@ -3,6 +3,11 @@
     padding: $padding;
 }
 
+@mixin heightWitdh($height, $width) {
+    height: $height;
+    width: $width;
+}
+
 @mixin textProperties($family, $size, $weight) {
     font-family: $family;
     font-size: $size;
