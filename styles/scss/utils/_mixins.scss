@@ -14,8 +14,7 @@
     font-weight: $weight;
 }
 
-@mixin button($width, $radius, $border, $shadow, $background, $color) {
-    width: $width;
+@mixin button($radius, $border, $shadow, $background, $color) {
     border-radius: $radius;
     border: $border;
     box-shadow: $shadow;

@@ -1,0 +1,12 @@
+.starter-dish-dessert {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-family: 'Roboto';
+    &::after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 45px;
+        background-color: $green;
+    }
+}

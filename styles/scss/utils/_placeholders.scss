@@ -5,7 +5,7 @@
 }
 %compteurList {
     padding: 0.3rem 0.6rem;
-    background-color: blueviolet;
+    background-color: $purple;
     border-radius: 50%;
     color: white;
     position: absolute;
@@ -14,7 +14,7 @@
 }
 
 %new {
-    background-color: #99E2D0;
+    background-color: $green;
     color: #238068;
     position: absolute;
     padding: 0.3rem 0.8rem;

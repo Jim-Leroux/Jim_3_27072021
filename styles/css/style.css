@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.geoloc, header {
+header i, .button-menu, .geoloc, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,11 @@ footer ul li a {
 footer ul li a i {
   width: 1rem;
   padding-right: 0.5rem;
+}
+
+.footer-container-menu {
+  margin-top: -5rem;
+  padding-bottom: 0.5rem;
 }
 
 .loaderpage {
@@ -221,6 +226,29 @@ footer {
   }
 }
 
+.main-menu {
+  margin: auto;
+  padding: 1rem;
+  top: -5rem;
+  position: relative;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand";
+  font-size: 12px;
+  position: relative;
+}
+.title-menu div i {
+  font-size: 32px;
+}
+
 div .whiteheart {
   margin: 1rem;
   padding: 0;
@@ -252,15 +280,14 @@ div .colorheart:hover {
 
 button {
   margin: 0;
-  padding: 0.8rem 0.5rem;
+  padding: 0.8rem 2rem;
   font-family: "Roboto";
   font-size: 17px;
   font-weight: 500;
-  width: 250px;
   border-radius: 40px;
   border: none;
   box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.3);
-  background: linear-gradient(#f870d1, #894bd4);
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   transition: 0.5s;
   cursor: pointer;
@@ -268,6 +295,10 @@ button {
 button:hover {
   box-shadow: 5px 5px 3px rgba(36, 36, 36, 0.3);
   background: linear-gradient(#fa81d8, #9761da);
+}
+
+.button-menu {
+  padding: 2rem;
 }
 
 .card {
@@ -281,8 +312,8 @@ button:hover {
   color: black;
 }
 .card .foodpicture {
-  width: 100%;
   height: 170px;
+  width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -349,6 +380,69 @@ button:hover {
   position: absolute;
   left: -0.8rem;
   top: 1.2rem;
+}
+
+header i {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  font-size: 1.2rem;
+  color: black;
+  transform: translateY(-50%);
+}
+
+.restaurant-picture {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.starter-dish-dessert {
+  margin-top: 2rem;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+.starter-dish-dessert::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 45px;
+  background-color: #99E2D0;
+}
+
+.meal-list {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin: 1rem 0;
+}
+.meal-list .meal-description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem;
+}
+.meal-list .meal-description h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.meal-list .meal-description p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+.meal-list .meal-price {
+  display: flex;
+  align-items: center;
+}
+.meal-list .meal-price p {
+  position: absolute;
+  right: 2rem;
+}
+.meal-list .meal-price i {
+  position: absolute;
+  right: -2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

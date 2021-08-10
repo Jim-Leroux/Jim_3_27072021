@@ -1,0 +1,11 @@
+header {
+    i {
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        font-size: 1.2rem;
+        color: black;
+        @extend %flexMid;
+        transform: translateY(-50%);
+    }
+}

@@ -11,8 +11,8 @@
     @include marginPadding(auto, 0);
     @include heightWitdh(120px, 120px);
     border: 16px solid transparent;
-    border-top-color: #9356DC;
-    border-bottom-color: #FF79DA;
+    border-top-color: $purple;
+    border-bottom-color: $pink;
     border-radius: 50%;
     animation: chargeur 4s linear 0.5s forwards;
   }
@@ -30,26 +30,26 @@
   @keyframes chargeur {
     0%{
       transform: rotate(0deg) scale(0.8);
-      border-top-color: #FF79DA;
-      border-bottom-color: #99E2D0;
+      border-top-color: $pink;
+      border-bottom-color: $green;
     }
     25%{
-      border-top-color: #9356DC;
-      border-bottom-color: #99E2D0;
+      border-top-color: $purple;
+      border-bottom-color: $green;
     }
     50% {
        transform: rotate(360deg) scale(1);
-      border-top-color: #9356DC;
-      border-bottom-color: #FF79DA;
+      border-top-color: $purple;
+      border-bottom-color: $pink;
     }
     75%{
-      border-top-color: #FF79DA;
-      border-bottom-color: #9356DC;
+      border-top-color: $pink;
+      border-bottom-color: $purple;
     }
     100%{
        transform: rotate(720deg) scale(0.8);
-      border-top-color: #9356DC;
-      border-bottom-color: #9356DC;
+      border-top-color: $purple;
+      border-bottom-color: $purple;
     }
     
   }
