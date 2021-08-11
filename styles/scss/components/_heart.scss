@@ -1,4 +1,7 @@
 div {
+    .colorheart:hover ~ .whiteheart {
+        opacity: 0;
+    }
     .whiteheart {
         @include marginPadding(1rem, 0);
         font-size: 35px;

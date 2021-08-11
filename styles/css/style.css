@@ -249,6 +249,9 @@ footer {
   font-size: 32px;
 }
 
+div .colorheart:hover ~ .whiteheart {
+  opacity: 0;
+}
 div .whiteheart {
   margin: 1rem;
   padding: 0;
