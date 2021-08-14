@@ -1,34 +1,58 @@
 .meal-list {
-    background-color: white;
+    @include marginPadding(1rem auto, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     display: flex;
-    margin: 1rem 0;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
     .meal-description {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
+        width: 77%;
         padding: 1rem;
+        transition: 0.4s;
         h2 {
-            margin: 0;
-            padding: 0;
+            @include marginPadding(0, 0);
             font-size: 16px;
+            font-family: 'Roboto';
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         p {
-            margin: 0;
-            padding: 0;
+            @include marginPadding(0, 0);
             font-size: 18px;
+            font-family: 'Roboto';
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
-    .meal-price {
+    .icon-price {
         display: flex;
-        align-items: center;
-        p {
-            position: absolute;
-            right: 2rem;
-        }
-        i {
-            position: absolute;
-            right: -2rem;
+        .meal-price {
+            display: flex;
+            align-items: center;
+            font-family: 'Roboto';
+            p {
+                margin-top: 2.3rem;
+                margin-right: 1rem;
+                font-weight: bold;
+                @include heightWitdh(0, 2rem);
+                @extend %flexMid;
+            }
         }
     }
 }
+.meal-list:hover .fa-check-circle {
+    transform: none;
+}
+.meal-list:hover .v-icon {
+    margin-right: 0px;
+}
+.meal-list:hover .meal-description {
+    width: 55%;
+    @media screen and (min-width: 550px) {
+        width: 70%;
+    }
+}
+

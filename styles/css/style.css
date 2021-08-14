@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-header i, .button-menu, .geoloc, header {
+.meal-list .icon-price .meal-price p, header i, .button-menu, .geoloc, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,11 @@ header i, .button-menu, .geoloc, header {
   top: 1rem;
 }
 
+.meal-list9, .meal-list8, .meal-list7, .meal-list6, .meal-list5, .meal-list4, .meal-list3, .meal-list2, .meal-list1 {
+  -webkit-animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
 header {
   margin: 0;
   padding: 1.25rem;
@@ -28,6 +33,7 @@ header img {
 
 footer {
   background-color: #353535;
+  font-family: "Roboto";
 }
 footer .footer-container {
   width: 95%;
@@ -37,6 +43,7 @@ footer .footer-container {
 footer img {
   padding-top: 1rem;
   padding-left: 1rem;
+  -webkit-filter: invert(100%);
   filter: invert(100%);
   width: 125px;
 }
@@ -71,6 +78,7 @@ footer ul li a i {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  -webkit-animation: page 1s linear 4s forwards;
   animation: page 1s linear 4s forwards;
 }
 .loaderpage .loader {
@@ -82,9 +90,19 @@ footer ul li a i {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
+  -webkit-animation: chargeur 4s linear 0.5s forwards;
   animation: chargeur 4s linear 0.5s forwards;
 }
 
+@-webkit-keyframes page {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 @keyframes page {
   0% {
     opacity: 1;
@@ -92,6 +110,31 @@ footer ul li a i {
   100% {
     opacity: 0;
     z-index: -10;
+  }
+}
+@-webkit-keyframes chargeur {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+    border-top-color: #FF79DA;
+    border-bottom-color: #99E2D0;
+  }
+  25% {
+    border-top-color: #9356DC;
+    border-bottom-color: #99E2D0;
+  }
+  50% {
+    transform: rotate(360deg) scale(1);
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+  }
+  75% {
+    border-top-color: #FF79DA;
+    border-bottom-color: #9356DC;
+  }
+  100% {
+    transform: rotate(720deg) scale(0.8);
+    border-top-color: #9356DC;
+    border-bottom-color: #9356DC;
   }
 }
 @keyframes chargeur {
@@ -229,6 +272,7 @@ footer {
 .main-menu {
   margin: auto;
   padding: 1rem;
+  max-width: 1200px;
   top: -5rem;
   position: relative;
   background-color: #F6F6F6;
@@ -271,9 +315,11 @@ div .colorheart {
   position: absolute;
   transition: 0.4s;
   opacity: 0;
+  cursor: pointer;
 }
 div .colorheart:hover {
-  background: linear-gradient(blueviolet, pink);
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   opacity: 1;
@@ -318,6 +364,7 @@ button:hover {
   height: 170px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .card .description {
@@ -397,6 +444,7 @@ header i {
 .restaurant-picture {
   height: 300px;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -414,38 +462,165 @@ header i {
 }
 
 .meal-list {
+  margin: 1rem auto;
+  padding: 0;
   background-color: white;
   border-radius: 10px;
   display: flex;
-  margin: 1rem 0;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
 }
 .meal-list .meal-description {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  width: 77%;
   padding: 1rem;
+  transition: 0.4s;
 }
 .meal-list .meal-description h2 {
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: "Roboto";
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .meal-list .meal-description p {
   margin: 0;
   padding: 0;
   font-size: 18px;
+  font-family: "Roboto";
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.meal-list .meal-price {
+.meal-list .icon-price {
+  display: flex;
+}
+.meal-list .icon-price .meal-price {
   display: flex;
   align-items: center;
+  font-family: "Roboto";
 }
-.meal-list .meal-price p {
-  position: absolute;
-  right: 2rem;
+.meal-list .icon-price .meal-price p {
+  margin-top: 2.3rem;
+  margin-right: 1rem;
+  font-weight: bold;
+  height: 0;
+  width: 2rem;
 }
-.meal-list .meal-price i {
-  position: absolute;
-  right: -2rem;
+
+.meal-list:hover .fa-check-circle {
+  transform: none;
+}
+
+.meal-list:hover .v-icon {
+  margin-right: 0px;
+}
+
+.meal-list:hover .meal-description {
+  width: 55%;
+}
+@media screen and (min-width: 550px) {
+  .meal-list:hover .meal-description {
+    width: 70%;
+  }
+}
+
+.v-icon {
+  margin: 0;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  font-size: 25px;
+  color: white;
+  overflow: hidden;
+  margin-right: -75px;
+  transition: 0.4s;
+}
+.v-icon .fa-check-circle {
+  transition: 0.6s;
+  transform: rotate(0.5turn);
+}
+
+.meal-list1 {
+  animation-delay: 0s;
+}
+
+.meal-list2 {
+  animation-delay: 0.1s;
+}
+
+.meal-list3 {
+  animation-delay: 0.3s;
+}
+
+.meal-list4 {
+  animation-delay: 0.4s;
+}
+
+.meal-list5 {
+  animation-delay: 0.5s;
+}
+
+.meal-list6 {
+  animation-delay: 0.6s;
+}
+
+.meal-list7 {
+  animation-delay: 0.7s;
+}
+
+.meal-list8 {
+  animation-delay: 0.8s;
+}
+
+.meal-list9 {
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes meal-loader {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.01);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+@keyframes meal-loader {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.01);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

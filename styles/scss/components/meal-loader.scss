@@ -1,0 +1,78 @@
+.meal-list1 {
+	@extend %meal-animation;
+            animation-delay: 0s;
+}
+.meal-list2 {
+	@extend %meal-animation;
+            animation-delay: 0.1s;
+}
+.meal-list3 {
+	@extend %meal-animation;
+            animation-delay: 0.3s;
+}
+.meal-list4 {
+	@extend %meal-animation;
+            animation-delay: 0.4s;
+}
+.meal-list5 {
+	@extend %meal-animation;
+            animation-delay: 0.5s;
+}
+.meal-list6 {
+	@extend %meal-animation;
+            animation-delay: 0.6s;
+}
+.meal-list7 {
+	@extend %meal-animation;
+            animation-delay: 0.7s;
+}
+.meal-list8 {
+	@extend %meal-animation;
+            animation-delay: 0.8s;
+}
+.meal-list9 {
+	@extend %meal-animation;
+            animation-delay: 0.9s;
+}
+
+ @-webkit-keyframes meal-loader {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    90% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.01);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes meal-loader {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    90% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.01);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+      }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  

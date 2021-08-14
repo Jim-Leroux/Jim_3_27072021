@@ -1,0 +1,17 @@
+.v-icon {
+    @include marginPadding(0, 0 1.5rem );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $green;
+    border-radius: 0 10px 10px 0;
+    font-size: 25px;
+    color: white;
+    overflow: hidden;
+    margin-right: -75px;
+    transition: 0.4s;
+    .fa-check-circle {
+        transition: 0.6s;
+        transform: rotate(0.5turn);
+    }
+}

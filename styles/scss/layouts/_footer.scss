@@ -1,14 +1,17 @@
 footer {
     background-color: #353535;
+    font-family: 'Roboto';
     .footer-container {
         width: 95%;
         max-width: 1240px;
         margin: auto;
+        
     }
     img {
         padding-top: 1rem;
         padding-left: 1rem;
-        filter: invert(100%);
+        -webkit-filter: invert(100%);
+                filter: invert(100%);
         width: 125px;
         }
     ul {

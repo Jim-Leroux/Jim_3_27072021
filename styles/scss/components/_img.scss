@@ -1,4 +1,5 @@
 .restaurant-picture {
     @include heightWitdh(300px, 100%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }

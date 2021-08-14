@@ -13,7 +13,8 @@
     .foodpicture {
         @include heightWitdh(170px, 100%);
         border-radius: 20px 20px 0px 0px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .new {
         @extend %new;
