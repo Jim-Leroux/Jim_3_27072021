@@ -1,6 +1,7 @@
 .restaurant {
     @include marginPadding( 0 auto, 1rem 0);
     background-color: #f3f3f3;
+    font-family: 'Roboto';
     h2 {
         width: 90%;
         margin: 1rem auto;

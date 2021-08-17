@@ -2,6 +2,9 @@
     background-color: #fafafa;
     text-align: center;
     padding: 2rem;
+    .reserveblock {
+        font-family: 'Roboto';
+    }
         h1 {
             @include marginPadding(0, 0 2rem);
         }
