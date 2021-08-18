@@ -15,7 +15,7 @@
   top: 1rem;
 }
 
-.meal-list9, .meal-list8, .meal-list7, .meal-list6, .meal-list5, .meal-list4, .meal-list3, .meal-list2, .meal-list1 {
+.meal-list {
   -webkit-animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -552,11 +552,11 @@ header i {
 }
 
 .meal-list1 {
-  animation-delay: 0s;
+  animation-delay: 0.1s;
 }
 
 .meal-list2 {
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
 }
 
 .meal-list3 {

@@ -1,18 +1,78 @@
-/* Error: The target selector was not found.
- * Use "@extend %meal-animation !optional" to avoid this error.
- *   ,
- * 2 |     @extend %meal-animation;
- *   |     ^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   styles/scss/components/meal-loader.scss 2:2  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend %meal-animation !optional" to avoid this error.\a   \2577 \a 2 \2502      @extend %meal-animation;\a   \2502      ^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/scss/components/meal-loader.scss 2:2  root stylesheet';
+.meal-list1 {
+  animation-delay: 0.1s;
 }
+
+.meal-list2 {
+  animation-delay: 0.2s;
+}
+
+.meal-list3 {
+  animation-delay: 0.3s;
+}
+
+.meal-list4 {
+  animation-delay: 0.4s;
+}
+
+.meal-list5 {
+  animation-delay: 0.5s;
+}
+
+.meal-list6 {
+  animation-delay: 0.6s;
+}
+
+.meal-list7 {
+  animation-delay: 0.7s;
+}
+
+.meal-list8 {
+  animation-delay: 0.8s;
+}
+
+.meal-list9 {
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes meal-loader {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.01);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+@keyframes meal-loader {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.01);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+}
+
+/*# sourceMappingURL=meal-loader.css.map */
