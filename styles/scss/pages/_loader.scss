@@ -2,11 +2,8 @@
   @include heightWitdh(100%, 100%);
   position: absolute;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexMid;
   z-index: 1000;
-  -webkit-animation: page 1s linear 4s forwards;
           animation: page 1s linear 4s forwards;
   .loader{
     @include marginPadding(auto, 0);
@@ -15,19 +12,8 @@
     border-top-color: $purple;
     border-bottom-color: $pink;
     border-radius: 50%;
-    -webkit-animation: chargeur 4s linear 0.5s forwards;
-            animation: chargeur 4s linear 0.5s forwards;
+                animation: chargeur 4s linear 0.5s forwards;
   }
-}
-  
-@-webkit-keyframes page {
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        z-index: -10;
-        }
 }
   
 @keyframes page {
@@ -39,32 +25,7 @@
         z-index: -10;
         }
 }
-  @-webkit-keyframes chargeur {
-    0%{
-      transform: rotate(0deg) scale(0.8);
-      border-top-color: $pink;
-      border-bottom-color: $green;
-    }
-    25%{
-      border-top-color: $purple;
-      border-bottom-color: $green;
-    }
-    50% {
-       transform: rotate(360deg) scale(1);
-      border-top-color: $purple;
-      border-bottom-color: $pink;
-    }
-    75%{
-      border-top-color: $pink;
-      border-bottom-color: $purple;
-    }
-    100%{
-       transform: rotate(720deg) scale(0.8);
-      border-top-color: $purple;
-      border-bottom-color: $purple;
-    }
-    
-  }
+
   @keyframes chargeur {
     0%{
       transform: rotate(0deg) scale(0.8);

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-.meal-list .icon-price .meal-price p, header i, .button-menu, .geoloc, header {
+.v-icon, .meal-list .icon-price .meal-price p, header i, .button-menu, .geoloc, .loaderpage, header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,43 @@
 }
 
 .meal-list {
-  -webkit-animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.meal-list1 {
+  animation-delay: 0.1s;
+}
+
+.meal-list2 {
+  animation-delay: 0.2s;
+}
+
+.meal-list3 {
+  animation-delay: 0.3s;
+}
+
+.meal-list4 {
+  animation-delay: 0.4s;
+}
+
+.meal-list5 {
+  animation-delay: 0.5s;
+}
+
+.meal-list6 {
+  animation-delay: 0.6s;
+}
+
+.meal-list7 {
+  animation-delay: 0.7s;
+}
+
+.meal-list8 {
+  animation-delay: 0.8s;
+}
+
+.meal-list9 {
+  animation-delay: 0.9s;
 }
 
 header {
@@ -43,7 +78,6 @@ footer .footer-container {
 footer img {
   padding-top: 1rem;
   padding-left: 1rem;
-  -webkit-filter: invert(100%);
   filter: invert(100%);
   width: 125px;
 }
@@ -74,11 +108,7 @@ footer ul li a i {
   width: 100%;
   position: absolute;
   background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1000;
-  -webkit-animation: page 1s linear 4s forwards;
   animation: page 1s linear 4s forwards;
 }
 .loaderpage .loader {
@@ -90,19 +120,9 @@ footer ul li a i {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: chargeur 4s linear 0.5s forwards;
   animation: chargeur 4s linear 0.5s forwards;
 }
 
-@-webkit-keyframes page {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
 @keyframes page {
   0% {
     opacity: 1;
@@ -110,31 +130,6 @@ footer ul li a i {
   100% {
     opacity: 0;
     z-index: -10;
-  }
-}
-@-webkit-keyframes chargeur {
-  0% {
-    transform: rotate(0deg) scale(0.8);
-    border-top-color: #FF79DA;
-    border-bottom-color: #99E2D0;
-  }
-  25% {
-    border-top-color: #9356DC;
-    border-bottom-color: #99E2D0;
-  }
-  50% {
-    transform: rotate(360deg) scale(1);
-    border-top-color: #9356DC;
-    border-bottom-color: #FF79DA;
-  }
-  75% {
-    border-top-color: #FF79DA;
-    border-bottom-color: #9356DC;
-  }
-  100% {
-    transform: rotate(720deg) scale(0.8);
-    border-top-color: #9356DC;
-    border-bottom-color: #9356DC;
   }
 }
 @keyframes chargeur {
@@ -204,6 +199,13 @@ footer {
   font-size: 20px;
   font-weight: 700;
   background: #f3f3f3;
+}
+.geoloc h2 {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 .geoloc i {
   margin-right: 0.7rem;
@@ -292,6 +294,7 @@ footer {
   align-items: center;
   font-family: "Shrikhand";
   font-size: 12px;
+  font-weight: normal;
   position: relative;
 }
 .title-menu div i {
@@ -369,7 +372,6 @@ button:hover {
   height: 170px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 .card .description {
@@ -420,8 +422,7 @@ button:hover {
   color: blueviolet;
 }
 .howitworks ul li i {
-  margin-right: 0.8rem;
-  margin-left: 0.8rem;
+  margin: 0 0.8rem;
   color: #666666;
 }
 
@@ -449,14 +450,14 @@ header i {
 .restaurant-picture {
   height: 300px;
   width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .starter-dish-dessert {
   margin-top: 2rem;
-  font-size: 18px;
   font-family: "Roboto";
+  font-size: 18px;
+  font-weight: normal;
 }
 .starter-dish-dessert::after {
   content: "";
@@ -486,16 +487,18 @@ header i {
 .meal-list .meal-description h2 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
   font-family: "Roboto";
+  font-size: 16px;
+  font-weight: bold;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .meal-list .meal-description p {
   margin: 0;
   padding: 0;
-  font-size: 18px;
   font-family: "Roboto";
+  font-size: 16px;
+  font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -535,9 +538,6 @@ header i {
 .v-icon {
   margin: 0;
   padding: 0 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #99E2D0;
   border-radius: 0 10px 10px 0;
   font-size: 25px;
@@ -551,79 +551,17 @@ header i {
   transform: rotate(0.5turn);
 }
 
-.meal-list1 {
-  animation-delay: 0.1s;
-}
-
-.meal-list2 {
-  animation-delay: 0.2s;
-}
-
-.meal-list3 {
-  animation-delay: 0.3s;
-}
-
-.meal-list4 {
-  animation-delay: 0.4s;
-}
-
-.meal-list5 {
-  animation-delay: 0.5s;
-}
-
-.meal-list6 {
-  animation-delay: 0.6s;
-}
-
-.meal-list7 {
-  animation-delay: 0.7s;
-}
-
-.meal-list8 {
-  animation-delay: 0.8s;
-}
-
-.meal-list9 {
-  animation-delay: 0.9s;
-}
-
-@-webkit-keyframes meal-loader {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  90% {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.01);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-}
 @keyframes meal-loader {
   0% {
-    -webkit-transform: scale(0.5);
     transform: scale(0.5);
-    -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
   }
   90% {
-    -webkit-transform: scale(1.1);
     transform: scale(1.01);
-    -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
   }
   100% {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
   }
 }

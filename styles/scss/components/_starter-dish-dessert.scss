@@ -1,12 +1,10 @@
 .starter-dish-dessert {
     margin-top: 2rem;
-    font-size: 18px;
-    font-family: 'Roboto';
+    @include textProperties('Roboto', 18px);
     &::after {
         content: '';
         display: block;
-        height: 4px;
-        width: 45px;
+        @include heightWitdh(4px, 45px);
         background-color: $green;
     }
 }

@@ -3,7 +3,12 @@
     @include marginPadding(0, 1.25rem);
     @include textProperties('Roboto', 20px, 700);
     background: #f3f3f3;
+    h2 {
+        @include textProperties('Roboto', 20px, 700);
+        @include marginPadding(0, 0);
+    }
     i {
         margin-right: 0.7rem;
     }
+
 }

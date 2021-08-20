@@ -1,48 +1,17 @@
-@for $i from 1 through 9 {
-        .meal-list#{$i} {
-                animation-delay: 0.1s * $i;
-        }
-}
 .meal-list {
         @extend %meal-animation !optional;
 }
- @-webkit-keyframes meal-loader {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-    }
-    90% {
-        -webkit-transform: scale(1.1);
-                transform: scale(1.01);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-      }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-    }
-  }
   @keyframes meal-loader {
     0% {
-      -webkit-transform: scale(0.5);
               transform: scale(0.5);
-      -webkit-transform-origin: 50% 0%;
               transform-origin: 50% 0%;
     }
     90% {
-        -webkit-transform: scale(1.1);
                 transform: scale(1.01);
-        -webkit-transform-origin: 50% 0%;
                 transform-origin: 50% 0%;
       }
     100% {
-      -webkit-transform: scale(1);
               transform: scale(1);
-      -webkit-transform-origin: 50% 0%;
               transform-origin: 50% 0%;
     }
   }

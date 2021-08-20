@@ -1,8 +1,6 @@
 .v-icon {
     @include marginPadding(0, 0 1.5rem );
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flexMid;
     background: $green;
     border-radius: 0 10px 10px 0;
     font-size: 25px;

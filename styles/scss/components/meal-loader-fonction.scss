@@ -1,0 +1,5 @@
+@for $i from 1 through 9 {
+    .meal-list#{$i} {
+            animation-delay: 0.1s * $i;
+    }
+}

@@ -1,9 +1,6 @@
 .title-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Shrikhand';
-    font-size: 12px;
+    @include flexMid(flex, space-between, center);
+    @include textProperties('Shrikhand', 12px);
     position: relative;
     div {
         i {

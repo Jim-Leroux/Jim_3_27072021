@@ -8,10 +8,16 @@
     width: $width;
 }
 
-@mixin textProperties($family, $size, $weight) {
+@mixin textProperties($family, $size, $weight: normal) {
     font-family: $family;
     font-size: $size;
     font-weight: $weight;
+}
+
+@mixin flexMid($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
 }
 
 @mixin button($radius, $border, $shadow, $background, $color) {
