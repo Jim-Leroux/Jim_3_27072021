@@ -16,6 +16,9 @@
                 box-shadow: 5px 5px 5px #ccc;
                 position: relative;
                 transition: 0.4s;
+                i {
+                    transition: 0.4s;
+                }
                 @media (min-width: 768px) {
                     width: 90%;
                 }

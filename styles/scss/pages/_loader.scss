@@ -1,6 +1,6 @@
 .loaderpage {
   @include heightWitdh(100%, 100%);
-  position: absolute;
+  position: fixed;
   background: white;
   @extend %flexMid;
   z-index: 1000;

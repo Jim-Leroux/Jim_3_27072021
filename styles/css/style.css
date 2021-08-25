@@ -106,7 +106,7 @@ footer ul li a i {
 .loaderpage {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: white;
   z-index: 1000;
   animation: page 1s linear 4s forwards;
@@ -408,6 +408,9 @@ button:hover {
   border-radius: 20px;
   box-shadow: 5px 5px 5px #ccc;
   position: relative;
+  transition: 0.4s;
+}
+.howitworks ul li i {
   transition: 0.4s;
 }
 @media (min-width: 768px) {
