@@ -4,7 +4,7 @@
   background: white;
   @extend %flexMid;
   z-index: 1000;
-          animation: page 1s linear 4s forwards;
+          animation: page 1s linear 3s forwards;
   .loader{
     @include marginPadding(auto, 0);
     @include heightWitdh(120px, 120px);
@@ -12,7 +12,7 @@
     border-top-color: $purple;
     border-bottom-color: $pink;
     border-radius: 50%;
-                animation: chargeur 4s linear 0.5s forwards;
+                animation: chargeur 3s linear 0.5s forwards;
   }
 }
   

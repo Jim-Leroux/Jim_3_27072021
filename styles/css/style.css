@@ -16,7 +16,7 @@
 }
 
 .meal-list {
-  animation: meal-loader 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: meal-loader 0.4s ease-in-out both;
 }
 
 .meal-list1 {
@@ -109,7 +109,7 @@ footer ul li a i {
   position: fixed;
   background: white;
   z-index: 1000;
-  animation: page 1s linear 4s forwards;
+  animation: page 1s linear 3s forwards;
 }
 .loaderpage .loader {
   margin: auto;
@@ -120,7 +120,7 @@ footer ul li a i {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  animation: chargeur 4s linear 0.5s forwards;
+  animation: chargeur 3s linear 0.5s forwards;
 }
 
 @keyframes page {
@@ -222,6 +222,9 @@ footer {
 .reserve h1 {
   margin: 0;
   padding: 0 2rem;
+}
+.reserve p {
+  margin: 2rem 0rem;
 }
 
 .howitworks {
@@ -335,8 +338,8 @@ div .colorheart:hover {
   transition: 0.4s;
 }
 
-button {
-  margin: 0;
+.button {
+  margin: 1rem;
   padding: 0.8rem 2rem;
   font-family: "Roboto";
   font-size: 17px;
@@ -346,10 +349,11 @@ button {
   box-shadow: 5px 5px 3px rgba(170, 170, 170, 0.3);
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
+  text-decoration: none;
   transition: 0.5s;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   box-shadow: 5px 5px 3px rgba(36, 36, 36, 0.3);
   background: linear-gradient(#fa81d8, #9761da);
 }

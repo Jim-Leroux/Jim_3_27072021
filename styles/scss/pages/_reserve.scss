@@ -8,4 +8,7 @@
         h1 {
             @include marginPadding(0, 0 2rem);
         }
+        p {
+            margin: 2rem 0rem;
+        }
 }

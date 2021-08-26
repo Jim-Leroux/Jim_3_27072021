@@ -1,7 +1,8 @@
-button {
-    @include marginPadding(0, 0.8rem 2rem);
+.button {
+    @include marginPadding(1rem, 0.8rem 2rem);
     @include textProperties('Roboto', 17px, 500);
     @include button(40px, none, 5px 5px 3px rgba(170, 170, 170, 0.3), linear-gradient($pink,$purple), white);
+    text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
         &:hover {
