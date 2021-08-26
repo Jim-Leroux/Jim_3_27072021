@@ -19,42 +19,6 @@
   animation: meal-loader 0.4s ease-in-out both;
 }
 
-.meal-list1 {
-  animation-delay: 0.1s;
-}
-
-.meal-list2 {
-  animation-delay: 0.2s;
-}
-
-.meal-list3 {
-  animation-delay: 0.3s;
-}
-
-.meal-list4 {
-  animation-delay: 0.4s;
-}
-
-.meal-list5 {
-  animation-delay: 0.5s;
-}
-
-.meal-list6 {
-  animation-delay: 0.6s;
-}
-
-.meal-list7 {
-  animation-delay: 0.7s;
-}
-
-.meal-list8 {
-  animation-delay: 0.8s;
-}
-
-.meal-list9 {
-  animation-delay: 0.9s;
-}
-
 header {
   margin: 0;
   padding: 1.25rem;
@@ -518,8 +482,7 @@ header i {
   font-family: "Roboto";
 }
 .meal-list .icon-price .meal-price p {
-  margin-top: 2.3rem;
-  margin-right: 1rem;
+  margin: 2.3rem 1rem inherit 0;
   font-weight: bold;
   height: 0;
   width: 2rem;
@@ -571,6 +534,41 @@ header i {
     transform: scale(1);
     transform-origin: 50% 0%;
   }
+}
+.meal-list1 {
+  animation-delay: 0.1s;
+}
+
+.meal-list2 {
+  animation-delay: 0.2s;
+}
+
+.meal-list3 {
+  animation-delay: 0.3s;
+}
+
+.meal-list4 {
+  animation-delay: 0.4s;
+}
+
+.meal-list5 {
+  animation-delay: 0.5s;
+}
+
+.meal-list6 {
+  animation-delay: 0.6s;
+}
+
+.meal-list7 {
+  animation-delay: 0.7s;
+}
+
+.meal-list8 {
+  animation-delay: 0.8s;
+}
+
+.meal-list9 {
+  animation-delay: 0.9s;
 }
 
 /*# sourceMappingURL=style.css.map */
