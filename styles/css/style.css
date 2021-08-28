@@ -270,6 +270,7 @@ footer {
 
 div .colorheart:hover ~ .whiteheart {
   opacity: 0;
+  transition: 0.4s;
 }
 div .whiteheart {
   margin: 1rem;
